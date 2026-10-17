@@ -159,7 +159,7 @@ model (or run the 7B overnight for a batch of takes).
    `(brief → sketch)` pairs (`training/train_chunked.sh`).
 3. Serve the adapter and re-run the shoot (`training/serve.py` + `loop/shoot.mjs`).
 
-### Result (this machine, M2 / 16 GB)
+### Result (MacBook M2 / 16 GB)
 
 | | Compile-gate pass rate |
 |---|---|
