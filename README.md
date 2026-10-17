@@ -5,12 +5,7 @@ JavaScript** instead of pixels, and the code is the artifact. Each piece is a
 *call sheet* — a film that doesn't exist, and a visual plan that never got shot.
 
 The domain (`callsheet.art`) shows the work; this README explains the machine
-behind it.
-
-This is a small, local re-imagining of Surya Narreddi's project
-([rling-qwen-to-paint-with-code](https://surya.website/rling-qwen-to-paint-with-code)):
-reinforcement learning on a creative task, where the reward is not "right or wrong"
-but a matter of taste that has to be authored by hand.
+behind it. This is a display of reinforcement learning on a creative task, where the reward is not "right or wrong" but a matter of taste that has to be authored by hand.
 
 ---
 
