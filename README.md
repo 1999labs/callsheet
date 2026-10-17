@@ -1,8 +1,6 @@
-# Callsheet.art
+# Callsheet.Art
 
-A language model is trained to **paint with code**: it writes **`p5.brush`
-JavaScript** instead of pixels, and the code is the artifact. Each piece is a
-*call sheet* - a film that doesn't exist, and a visual plan that never got shot.
+A language model trained to **paint with code**: it writes **`p5.brush` JavaScript** instead of pixels, and the code is the artifact. Each piece is a *call sheet* - a film that doesn't exist, and a visual plan that never got shot. 
 
 The domain (`callsheet.art`) shows the work; this README explains the machine
 behind it. This is a display of reinforcement learning on a creative task, where the reward is not "right or wrong" but a matter of taste that has to be authored by hand.
