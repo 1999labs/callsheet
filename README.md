@@ -1,4 +1,4 @@
-# Callsheet.Art
+## Callsheet.Art
 
 A language model trained to **paint with code**: it writes **`p5.brush` JavaScript** instead of pixels, and the code is the artifact. Each piece is a *call sheet* - a film that doesn't exist, and a visual plan that never got shot. 
 
