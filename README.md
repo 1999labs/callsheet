@@ -112,7 +112,7 @@ It combines the **compile gate** (from the manifest) with a **similarity score**
 the pool, calibrated so the pool's own plates define "okay" and "love". A take that
 nests in the pool and passes the gate is kept; a broken or near-empty take is an
 *outtake* no matter how it scores. Every take gets `data/generations/<id>/verdicts.json`,
-and a `data/ratings/<id>.json` template you can edit — **a human rating always wins**,
+and a `data/ratings/<id>.json` template you can edit - **a human rating always wins**,
 because the aesthetic signal is authored, not discovered.
 
 `--promote` copies the kept takes into `sketches/learned/` and appends them to
@@ -122,9 +122,7 @@ An optional VLM vote (pairwise, "which looks more like a plate?") is available b
 setting `CALLSHEET_VLM_URL` + `CALLSHEET_VLM_MODEL` to any OpenAI-compatible vision
 endpoint; with neither set, the judge runs with no model at all.
 
-## Design notes (what we learned building this)
-
-These mirror the findings in Surya's write-up, rediscovered the hard way:
+## Design notes (what I learned building this)
 
 1. **A short allowlist beats long documentation.** Handing the model a big API
    reference makes a small model invent APIs. A tight list of ~16 methods with
@@ -134,7 +132,7 @@ These mirror the findings in Surya's write-up, rediscovered the hard way:
    `irregular`. Show *example calls with numbers* instead.
 3. **The compile gate is the cheapest reward.** A parse check plus a render
    success/failure check filters most broken output for free.
-4. **Aesthetic reward is the hard part.** It has to be authored, not discovered — so
+4. **Aesthetic reward is the hard part.** It has to be authored, not discovered - so
    the judge anchors on a hand-rated reference pool and lets a human rating override
    the score (`judge/README.md`).
 
@@ -173,7 +171,7 @@ model (or run the 7B overnight for a batch of takes).
 The fine-tune turns a model that mostly emits un-parseable code into one that
 reliably writes the corpus's shape (a `function leaf(...)` helper, `function setup()`
 with `createCanvas`/`randomSeed`, `for` loops, the allowed brush calls). Composition
-is still loose — expected for a 1.5B on a 17-example corpus — so the next step is
+is still loose — expected for a 1.5B on a 17-example corpus - so the next step is
 growing the pool and iterating sample → judge → learn.
 
 ### A macOS gotcha worth knowing
@@ -189,5 +187,4 @@ See `training/README.md`.
 
 ## Credits
 
-Concept inspired by Surya Narreddi's RL-a-model-to-paint-with-code (with Cameron
-Franz and Alex Wang). p5.brush by Alejandro Campos Uribe.
+p5.brush by Alejandro Campos Uribe.
