@@ -1,17 +1,8 @@
-# callsheet.art
-
-Invented films, painted as code.
+# Callsheet.art
 
 A language model is trained to **paint with code**: it writes **`p5.brush`
-JavaScript** instead of pixels, and the code is the artefact. Each piece is a
+JavaScript** instead of pixels, and the code is the artifact. Each piece is a
 *call sheet* — a film that doesn't exist, and a visual plan that never got shot.
-
-Two collections so far:
-
-- **Colour scripts** — the colour-and-mood strip for an invented film, scene by
-  scene, one panel per beat.
-- **Botanical plates** — an invented specimen on aged paper, as if from the
-  herbarium of a period film.
 
 The domain (`callsheet.art`) shows the work; this README explains the machine
 behind it.
