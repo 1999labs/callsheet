@@ -1,0 +1,17 @@
+{
+  "id": "cs-004",
+  "day": 14,
+  "location": "EXT. CHAPEL RUINS",
+  "light": "grey overcast",
+  "species": "Umbra stellata",
+  "flower": "flat umbels of tiny white star florets",
+  "foliage": "finely divided carrot-like leaves",
+  "color": "ivory florets, soft ash-green foliage",
+  "archetype": "umbel",
+  "palette": {
+    "foliage": "#93a08a",
+    "petal": "#efe9da",
+    "accent": "#b9a86f",
+    "stem": "#8f9078"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "i": 2,
+  "seed": 1002,
+  "ok": true,
+  "errors": [],
+  "stage": "rendered",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 0,
+  "attempts": [],
+  "code": "function leaf(bx, by, tx, ty, s, col, al) {\n  brush.fill(col, al);\n  brush.fillBleed(0.4, \"out\", -15);\n  brush.fillTexture(0.45, 0.35);\n  brush.beginShape(0.6);\n  brush.vertex(bx, by - s, 0.4);\n  brush.vertex(tx, ty, 1.0);\n  brush.vertex(bx, by + s, 0.4);\n  brush.endShape(true);\n}\n\nfunction setup() {\n  createCanvas(1000, 1400, WEBGL);\n  randomSeed(64760);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n  const fol = \"#7f8f44\", pet = \"#e69a44\", acc = \"#b07aa8\", stm = \"#8f5a34\";\n  brush.set(\"2B\", stm, 1.0);\n  brush.line(0, 650, 0, -180);\n  for (let i = 0; i < 12; i++) {\n    leaf(0, 540 - i * 170, (i % 6) ? 1 : -1, 500 - i * 170, 110, fol, 58);\n  }\n  brush.fillBleed(0.3, \"out\", 40);\n  brush.fillTexture(0.4, 0.3);\n  for (let i = 0; i < 2; i++) {\n    const y = -200 - i * 340, dx = (i % 2 ? 1 : -1) * 90;\n    brush.beginShape(0.8);\n    brush.vertex(dx, y, 0.4);\n    brush.vertex(dx - 15, y - 70, 1.0);\n    brush.vertex(dx, y - 140, 0.4);\n    brush.vertex(dx + 15, y - 70, 1.0);\n    brush.vertex(dx, y, 0.4);\n    brush.endShape(true);\n    brush.set(\"2H\", pet, 0.6);\n    brush.line(dx, y - 70, dx, y - 210);\n  }\n}\n\nfunction draw() {}"
+}

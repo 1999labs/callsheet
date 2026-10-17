@@ -1,0 +1,12 @@
+{
+  "i": 2,
+  "seed": 1002,
+  "ok": true,
+  "errors": [],
+  "stage": "rendered",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 0,
+  "attempts": [],
+  "code": "function leaf(bx, by, tx, ty, s, col, al) {\n  brush.fill(col, al);\n  brush.fillBleed(0.4, \"out\", -15);\n  brush.fillTexture(0.45, 0.35);\n  brush.beginShape(0.6);\n  brush.vertex(bx, by - s, 0.4);\n  brush.vertex(tx, ty, 1.0);\n  brush.vertex(bx, by + s, 0.4);\n  brush.endShape(true);\n}\n\nfunction setup() {\n  createCanvas(1000, 1400, WEBGL);\n  randomSeed(84808);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n  const fol = \"#7f8f77\", pet = \"#8fa8c4\", acc = \"#6d86a3\", stm = \"#9a9280\";\n  brush.set(\"2B\", stm, 0.9);\n  brush.line(0, 640, -30, -120);\n  brush.line(-30, -120, -170, -430);\n  brush.line(-30, -120, 140, -400);\n  brush.line(-30, -120, 10, -560);\n  leaf(-10, 460, -300, 340, 140, fol, 62);\n  leaf(10, 320, 290, 190, 130, fol, 62);\n  leaf(-5, 140, -250, 0, 120, fol, 58);\n  const bells = [[-170, -490], [-170, -320], [-170, -150], [140, -460], [140, -290], [10, -600]];\n  for (const [x, y] of bells) {\n    brush.fill(pet, 84);\n    brush.beginShape(0.8);\n    brush.vertex(x, y, 0.4);\n    brush.vertex(x - 60, y + 78, 1.0);\n    brush.vertex(x, y + 162, 0.4);\n    brush.vertex(x + 60, y + 78, 1.0);\n    brush.endShape(true);\n    brush.set(\"2H\", acc, 0.5);\n    brush.line(x, y + 26, x, y + 158);\n  }\n}\n\nfunction draw() {}"
+}

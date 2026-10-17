@@ -1,0 +1,17 @@
+{
+  "id": "cs-007",
+  "day": 25,
+  "location": "EXT. MARSH EDGE",
+  "light": "misty morning",
+  "species": "Capsula viridis",
+  "flower": "a stalk of green seed capsules, some splitting",
+  "foliage": "strap-like leaves at the base",
+  "color": "pale green capsules, deeper green leaves",
+  "archetype": "pods",
+  "palette": {
+    "foliage": "#6f8a4e",
+    "petal": "#a9bd7f",
+    "accent": "#4f6a34",
+    "stem": "#7a8a56"
+  }
+}

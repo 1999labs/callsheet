@@ -1,0 +1,151 @@
+{
+  "id": "cs-001",
+  "collection": "botanical",
+  "label": "Nerina pallida",
+  "model": null,
+  "thresholds": {
+    "mid": 0.412,
+    "hi": 0.53
+  },
+  "counts": {
+    "total": 5,
+    "love": 2,
+    "okay": 1,
+    "outtake": 2
+  },
+  "takes": [
+    {
+      "i": 1,
+      "ok": false,
+      "sim": 0,
+      "nearest": null,
+      "vlm": null,
+      "verdict": "outtake",
+      "reasons": [
+        "gate: x is not defined"
+      ],
+      "features": null,
+      "rated": false
+    },
+    {
+      "i": 2,
+      "ok": true,
+      "sim": 0.683,
+      "nearest": "cs-001/love",
+      "vlm": null,
+      "verdict": "love",
+      "reasons": [],
+      "features": {
+        "coverage": 0.023,
+        "cx": -0.017,
+        "cy": -0.0823,
+        "bboxFill": 0.1119,
+        "bboxW": 0.212,
+        "bboxH": 0.9643,
+        "marginMin": 0,
+        "clip": 1,
+        "topCov": 0.0127,
+        "bottomCov": 0.0103,
+        "leftCov": 0.0155,
+        "rightCov": 0.0075,
+        "satMean": 0.3938,
+        "hueConc": 0.7177,
+        "colorCount": 80,
+        "edgeDensity": 0.0023,
+        "symmetry": 0.972,
+        "inkPixels": 32214
+      },
+      "rated": true
+    },
+    {
+      "i": 3,
+      "ok": true,
+      "sim": 0.539,
+      "nearest": "cs-001/love",
+      "vlm": null,
+      "verdict": "love",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0279,
+        "cx": 0.0099,
+        "cy": -0.075,
+        "bboxFill": 0.1913,
+        "bboxW": 0.15,
+        "bboxH": 0.9643,
+        "marginMin": 0,
+        "clip": 1,
+        "topCov": 0.0162,
+        "bottomCov": 0.0117,
+        "leftCov": 0.0121,
+        "rightCov": 0.0158,
+        "satMean": 0.3572,
+        "hueConc": 0.5441,
+        "colorCount": 103,
+        "edgeDensity": 0.004,
+        "symmetry": 0.9781,
+        "inkPixels": 39024
+      },
+      "rated": true
+    },
+    {
+      "i": 4,
+      "ok": true,
+      "sim": 0.36,
+      "nearest": "cs-001/love",
+      "vlm": null,
+      "verdict": "outtake",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0253,
+        "cx": 0.2954,
+        "cy": 0.3136,
+        "bboxFill": 0.0537,
+        "bboxW": 0.571,
+        "bboxH": 0.8221,
+        "marginMin": 0.001,
+        "clip": 1,
+        "topCov": 0.0054,
+        "bottomCov": 0.0199,
+        "leftCov": 0.002,
+        "rightCov": 0.0233,
+        "satMean": 0.5435,
+        "hueConc": 0.6728,
+        "colorCount": 93,
+        "edgeDensity": 0.0064,
+        "symmetry": 0.952,
+        "inkPixels": 35381
+      },
+      "rated": false
+    },
+    {
+      "i": 5,
+      "ok": true,
+      "sim": 0.443,
+      "nearest": "cs-001/love",
+      "vlm": null,
+      "verdict": "okay",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0238,
+        "cx": -0.0076,
+        "cy": 0.5384,
+        "bboxFill": 0.0812,
+        "bboxW": 0.493,
+        "bboxH": 0.5936,
+        "marginMin": 0.035,
+        "clip": 0,
+        "topCov": 0.0013,
+        "bottomCov": 0.0225,
+        "leftCov": 0.0151,
+        "rightCov": 0.0087,
+        "satMean": 0.3991,
+        "hueConc": 0.5697,
+        "colorCount": 94,
+        "edgeDensity": 0.0035,
+        "symmetry": 0.9696,
+        "inkPixels": 33383
+      },
+      "rated": true
+    }
+  ]
+}

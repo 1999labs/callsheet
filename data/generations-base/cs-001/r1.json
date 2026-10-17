@@ -1,0 +1,19 @@
+{
+  "i": 1,
+  "seed": 1001,
+  "ok": false,
+  "errors": [
+    "p5.brush could not resolve an active WEBGL sketch. Call brush.instance(p) and brush.load() after createCanvas(..., WEBGL)."
+  ],
+  "stage": "render",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 1,
+  "attempts": [
+    {
+      "code": "brush.set(\"0D\", \"#0288CC\", 7);\nbrush.beginShape();\nbrush.vertex(-250, 0);\nbrush.vertex(250, 0);\nbrush.vertex(0, -100);\nbrush.endShape(false);",
+      "reason": "runtime: Brush \"0D\" not found. Available brushes: pen, rotring, 2B, HB, 2H, cpencil, pastel, crayon, charcoal, spray, marker."
+    }
+  ],
+  "code": "brush.set(\"2B\", \"#0288CC\", 7);\nbrush.beginShape();\nbrush.vertex(-250, 0);\nbrush.vertex(250, 0);\nbrush.vertex(0, -100);\nbrush.endShape(false);"
+}

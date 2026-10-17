@@ -1,0 +1,76 @@
+{
+  "id": "cs-006",
+  "collection": "botanical",
+  "label": "Carduus spinens",
+  "model": null,
+  "thresholds": {
+    "mid": 0.412,
+    "hi": 0.53
+  },
+  "counts": {
+    "total": 3,
+    "love": 0,
+    "okay": 0,
+    "outtake": 3
+  },
+  "takes": [
+    {
+      "i": 1,
+      "ok": false,
+      "sim": 0,
+      "nearest": null,
+      "vlm": null,
+      "verdict": "outtake",
+      "reasons": [
+        "gate: syntax: Unexpected token ':'"
+      ],
+      "features": null,
+      "rated": false
+    },
+    {
+      "i": 2,
+      "ok": false,
+      "sim": 0,
+      "nearest": null,
+      "vlm": null,
+      "verdict": "outtake",
+      "reasons": [
+        "gate: CV is not defined"
+      ],
+      "features": null,
+      "rated": false
+    },
+    {
+      "i": 3,
+      "ok": true,
+      "sim": 0.635,
+      "nearest": "cs-002/love",
+      "vlm": null,
+      "verdict": "outtake",
+      "reasons": [
+        "nearly empty"
+      ],
+      "features": {
+        "coverage": 0.0119,
+        "cx": -0.0308,
+        "cy": 0.0998,
+        "bboxFill": 0.0273,
+        "bboxW": 0.487,
+        "bboxH": 0.8886,
+        "marginMin": 0.0007,
+        "clip": 1,
+        "topCov": 0.0055,
+        "bottomCov": 0.0064,
+        "leftCov": 0.0088,
+        "rightCov": 0.0031,
+        "satMean": 0.2199,
+        "hueConc": 0.4551,
+        "colorCount": 65,
+        "edgeDensity": 0.0021,
+        "symmetry": 0.9804,
+        "inkPixels": 16611
+      },
+      "rated": false
+    }
+  ]
+}

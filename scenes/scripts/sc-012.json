@@ -1,0 +1,49 @@
+{
+  "kind": "colorscript",
+  "id": "sc-012",
+  "title": "Ashfall",
+  "director": "D. Reyes",
+  "year": 2009,
+  "genre": "disaster",
+  "cols": 6,
+  "scenes": [
+    "warning sky",
+    "eruption",
+    "ash rain",
+    "cold night",
+    "moon through smoke",
+    "clearing"
+  ],
+  "base": [
+    "#5a5a5a",
+    "#7a5a4a",
+    "#4a4a54",
+    "#2a2a34",
+    "#101018",
+    "#3a2a2a"
+  ],
+  "mid": [
+    "#3a3a3a",
+    "#5a3a2a",
+    "#2f303a",
+    "#181820",
+    "#0a0a10",
+    "#1a1212"
+  ],
+  "acc": [
+    "#c8b48a",
+    "#e07a3a",
+    "#8fa8b4",
+    "#c8d0e0",
+    "#e0d0a8",
+    "#e0b080"
+  ],
+  "form": [
+    "hills",
+    "fire",
+    "rain",
+    "stars",
+    "moon",
+    "horizon"
+  ]
+}

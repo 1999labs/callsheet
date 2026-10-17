@@ -1,0 +1,49 @@
+{
+  "kind": "colorscript",
+  "id": "sc-010",
+  "title": "The Long Field",
+  "director": "T. Halloran",
+  "year": 1993,
+  "genre": "war drama",
+  "cols": 6,
+  "scenes": [
+    "dawn",
+    "advance",
+    "shellfire",
+    "downpour",
+    "aftermath",
+    "night"
+  ],
+  "base": [
+    "#7d8a6a",
+    "#8a9a78",
+    "#c9a15a",
+    "#4a5a68",
+    "#5a6b5a",
+    "#2a2b40"
+  ],
+  "mid": [
+    "#5a6b4a",
+    "#5f7a4a",
+    "#8a5a2a",
+    "#2f3a44",
+    "#3a4a3a",
+    "#1a1b2c"
+  ],
+  "acc": [
+    "#e6dcc0",
+    "#d8c890",
+    "#e07a3a",
+    "#8fa8b4",
+    "#a8b88a",
+    "#e8d9b0"
+  ],
+  "form": [
+    "fields",
+    "horizon",
+    "fire",
+    "rain",
+    "hills",
+    "moon"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "kind": "colorscript",
+  "id": "sc-003",
+  "title": "Paper City",
+  "director": "R. Vandal",
+  "year": 1998,
+  "genre": "urban noir",
+  "cols": 6,
+  "scenes": [
+    "dusk",
+    "neon",
+    "rain",
+    "subway",
+    "pre-dawn",
+    "morning"
+  ],
+  "base": [
+    "#3a3550",
+    "#2a2440",
+    "#1a1e2c",
+    "#0f1020",
+    "#5a4a6a",
+    "#8a7a98"
+  ],
+  "mid": [
+    "#5a4a68",
+    "#4a3a60",
+    "#2a3040",
+    "#1a1c2a",
+    "#7a5a78",
+    "#b9a0b0"
+  ],
+  "acc": [
+    "#e06a8a",
+    "#f0a03a",
+    "#5fd0e0",
+    "#c8e0f0",
+    "#e0b0d0",
+    "#f0d9c0"
+  ],
+  "form": [
+    "city",
+    "city",
+    "rain",
+    "city",
+    "city",
+    "horizon"
+  ]
+}

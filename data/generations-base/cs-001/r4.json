@@ -1,0 +1,19 @@
+{
+  "i": 4,
+  "seed": 1004,
+  "ok": false,
+  "errors": [
+    "Identifier 'p5' has already been declared"
+  ],
+  "stage": "render",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 1,
+  "attempts": [
+    {
+      "code": "// Create canvas\ncreateCanvas(1000, 1400, WEBGL);\nrandomSeed(42);\nbackground(\"#f3ecdd\");\n\n// Pivot the canvas\ntranslate(width / 2, height / 2);\nscale(100);\n\n// Set the brush\nbrush.set(\"2B\", \"#f3ecdd\", 2);\n\n// Draw the plant\n// Stem and leaves\nbrush.circle(-100, -400, 50, 2);\nbrush.circle(-100, -500, 50, 2);\nbrush.circle(100, -400, 50, 2);\nbrush.circle(100, -500, 50, 2);\nbrush.circle(125, -450, 35, 2);\nbrush.circle(125, -550, 35, 2);\nbrush.circle(-125, -450, 35, 2);\nbrush.circle(-125, -550, 35, 2);\nbrush.circle(85, -500, 15, 2);\nbrush.circle(85, -400, 15, 2);\n\n// Leaves and flowers\nbrush.circle(100, -650, 25, 2);\nbrush.circle(-100, -650, 25, 2);\nbrush.circle(125, -650, 25, 2);\nbrush.circle(-125, -650, 25, 2);\nbrush.circle(85, -650, 10, 2);\nbrush.circle(85, -550, 10, 2);\n\n// Colors and fill texture\nbrush.fill(\"#f3ecdd\", 0.5);\nbrush.fillTexture(0.1, 1);\n\n// Fill snowflake pattern\nbrush.beginShape();\n\nlet size = 50;\nlet angle = 0;\n\nfor (let i = 0; i < 10; i++) {\n  brush.hatchStyle(\"rotring\", \"#f3ecdd\", 2);\n  brush.circle(100, -700, size, 2);\n  brush.circle(-100, -700, size, 2);\n  brush.circle(125, -700, size, 2);\n  brush.circle(-125, -700, size, 2);\n  brush.circle(85, -700, size / 1.5, 2);\n  brush.circle(85, -650, size / 1.5, 2);\n\n  angle += PI / 6;\n  size += 10;\n}\n\nbrush.endShape(true);",
+      "reason": "runtime: createCanvas is not defined"
+    }
+  ],
+  "code": "// Import p5 library\nconst p5 = require('p5');\n\n// Create the p5 instance\nlet myP5 = new p5(function(sketch) {\n\n  // Create canvas\n  sketch.createCanvas(1000, 1400, WEBGL);\n  sketch.randomSeed(42);\n  sketch.background(\"#f3ecdd\");\n\n  // Pivot the canvas\n  sketch.translate(sketch.width / 2, sketch.height / 2);\n  sketch.scale(100);\n\n  // Set the brush\n  sketch.brush.set(\"2B\", \"#f3ecdd\", 2);\n\n  // Draw the plant\n  // Stem and leaves\n  sketch.brush.circle(-100, -400, 50, 2);\n  sketch.brush.circle(-100, -500, 50, 2);\n  sketch.brush.circle(100, -400, 50, 2);\n  sketch.brush.circle(100, -500, 50, 2);\n  sketch.brush.circle(125, -450, 35, 2);\n  sketch.brush.circle(125, -550, 35, 2);\n  sketch.brush.circle(-125, -450, 35, 2);\n  sketch.brush.circle(-125, -550, 35, 2);\n  sketch.brush.circle(85, -500, 15, 2);\n  sketch.brush.circle(85, -400, 15, 2);\n\n  // Leaves and flowers\n  sketch.brush.circle(100, -650, 25, 2);\n  sketch.brush.circle(-100, -650, 25, 2);\n  sketch.brush.circle(125, -650, 25, 2);\n  sketch.brush.circle(-125, -650, 25, 2);\n  sketch.brush.circle(85, -650, 10, 2);\n  sketch.brush.circle(85, -550, 10, 2);\n\n  // Colors and fill texture\n  sketch.brush.fill(\"#f3ecdd\", 0.5);\n  sketch.brush.fillTexture(0.1, 1);\n\n  // Fill snowflake pattern\n  sketch.beginShape();\n\n  let size = 50;\n  let angle = 0;\n\n  for (let i = 0; i < 10; i++) {\n    sketch.brush.hatchStyle(\"rotring\", \"#f3ecdd\", 2);\n    sketch.brush.circle(100, -700, size, 2);\n    sketch.brush.circle(-100, -700, size, 2);\n    sketch.brush.circle(125, -700, size, 2);\n    sketch.brush.circle(-125, -700, size, 2);\n    sketch.brush.circle(85, -700, size / 1.5, 2);\n    sketch.brush.circle(85, -650, size / 1.5, 2);\n\n    angle += Math.PI / 6;\n    size += 10;\n  }\n\n  sketch.endShape(true);\n});\n\n// Initialize the p5 instance\nmyP5.size(1000, 1400);"
+}

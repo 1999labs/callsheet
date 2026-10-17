@@ -1,0 +1,108 @@
+{
+  "id": "cs-002",
+  "collection": "botanical",
+  "label": "Thalassa caerulea",
+  "model": null,
+  "thresholds": {
+    "mid": 0.412,
+    "hi": 0.53
+  },
+  "counts": {
+    "total": 3,
+    "love": 3,
+    "okay": 0,
+    "outtake": 0
+  },
+  "takes": [
+    {
+      "i": 1,
+      "ok": true,
+      "sim": 0.805,
+      "nearest": "cs-002/love",
+      "vlm": null,
+      "verdict": "love",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0184,
+        "cx": -0.0432,
+        "cy": -0.2539,
+        "bboxFill": 0.043,
+        "bboxW": 0.489,
+        "bboxH": 0.8721,
+        "marginMin": 0.0436,
+        "clip": 0,
+        "topCov": 0.0139,
+        "bottomCov": 0.0045,
+        "leftCov": 0.0109,
+        "rightCov": 0.0075,
+        "satMean": 0.1739,
+        "hueConc": 0.4414,
+        "colorCount": 54,
+        "edgeDensity": 0.0032,
+        "symmetry": 0.9718,
+        "inkPixels": 25746
+      },
+      "rated": true
+    },
+    {
+      "i": 2,
+      "ok": true,
+      "sim": 0.805,
+      "nearest": "cs-002/love",
+      "vlm": null,
+      "verdict": "love",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0184,
+        "cx": -0.0432,
+        "cy": -0.2539,
+        "bboxFill": 0.043,
+        "bboxW": 0.489,
+        "bboxH": 0.8721,
+        "marginMin": 0.0436,
+        "clip": 0,
+        "topCov": 0.0139,
+        "bottomCov": 0.0045,
+        "leftCov": 0.0109,
+        "rightCov": 0.0075,
+        "satMean": 0.1739,
+        "hueConc": 0.4414,
+        "colorCount": 54,
+        "edgeDensity": 0.0032,
+        "symmetry": 0.9718,
+        "inkPixels": 25746
+      },
+      "rated": true
+    },
+    {
+      "i": 3,
+      "ok": true,
+      "sim": 0.674,
+      "nearest": "cs-002/love",
+      "vlm": null,
+      "verdict": "love",
+      "reasons": [],
+      "features": {
+        "coverage": 0.0206,
+        "cx": 0.0133,
+        "cy": -0.3119,
+        "bboxFill": 0.0708,
+        "bboxW": 0.346,
+        "bboxH": 0.8364,
+        "marginMin": 0.0429,
+        "clip": 0,
+        "topCov": 0.017,
+        "bottomCov": 0.0036,
+        "leftCov": 0.0096,
+        "rightCov": 0.011,
+        "satMean": 0.1701,
+        "hueConc": 0.4885,
+        "colorCount": 53,
+        "edgeDensity": 0.0037,
+        "symmetry": 0.9766,
+        "inkPixels": 28795
+      },
+      "rated": true
+    }
+  ]
+}

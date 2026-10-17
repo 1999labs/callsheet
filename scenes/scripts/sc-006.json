@@ -1,0 +1,49 @@
+{
+  "kind": "colorscript",
+  "id": "sc-006",
+  "title": "The Glasshouse",
+  "director": "P. Aragon",
+  "year": 1986,
+  "genre": "interior drama",
+  "cols": 6,
+  "scenes": [
+    "first light",
+    "morning",
+    "greenhouse",
+    "afternoon",
+    "dusk",
+    "lamplight"
+  ],
+  "base": [
+    "#d8e0d0",
+    "#c0d0c8",
+    "#a8c0b0",
+    "#c8b8a0",
+    "#8a9a8a",
+    "#5a6a5a"
+  ],
+  "mid": [
+    "#8aa08a",
+    "#6a8a7a",
+    "#5a7868",
+    "#8a6a4a",
+    "#4a5a4a",
+    "#2f3f2f"
+  ],
+  "acc": [
+    "#f0e8d0",
+    "#e0f0e0",
+    "#c8e8d8",
+    "#e0b080",
+    "#d0e0c0",
+    "#e0f0d0"
+  ],
+  "form": [
+    "window",
+    "window",
+    "forest",
+    "window",
+    "window",
+    "window"
+  ]
+}

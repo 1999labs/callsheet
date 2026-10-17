@@ -1,0 +1,17 @@
+{
+  "id": "cs-017",
+  "day": 64,
+  "location": "EXT. MEADOW",
+  "light": "warm afternoon",
+  "species": "Orchis maculata",
+  "flower": "a spotted spike of small hooded mauve florets",
+  "foliage": "two broad spotted basal leaves",
+  "color": "mauve florets, spotted green leaves",
+  "archetype": "spike",
+  "palette": {
+    "foliage": "#6f8a5c",
+    "petal": "#b482a8",
+    "accent": "#7a4a6a",
+    "stem": "#7a8a5a"
+  }
+}

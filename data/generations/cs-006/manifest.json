@@ -1,0 +1,59 @@
+{
+  "scene": {
+    "id": "cs-006",
+    "day": 21,
+    "location": "EXT. CLIFF PATH",
+    "light": "bright, windy",
+    "species": "Carduus spinens",
+    "flower": "a spiky thistle head with a tufted violet crown",
+    "foliage": "deeply cut spiny grey-green leaves",
+    "color": "violet crown, thorny grey-green leaves",
+    "archetype": "thistle",
+    "palette": {
+      "foliage": "#8a9278",
+      "petal": "#7d6fae",
+      "accent": "#4f4671",
+      "stem": "#7d8466"
+    }
+  },
+  "count": 3,
+  "baseSeed": 1000,
+  "model": null,
+  "created": "2026-10-17T15:47:06.875Z",
+  "takes": [
+    {
+      "i": 1,
+      "seed": 1001,
+      "ok": false,
+      "errors": [
+        "syntax: Unexpected token ':'"
+      ],
+      "stage": "syntax",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 3
+    },
+    {
+      "i": 2,
+      "seed": 1002,
+      "ok": false,
+      "errors": [
+        "CV is not defined"
+      ],
+      "stage": "render",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 0
+    },
+    {
+      "i": 3,
+      "seed": 1003,
+      "ok": true,
+      "errors": [],
+      "stage": "rendered",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 0
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "i": 2,
+  "seed": 1002,
+  "ok": false,
+  "errors": [
+    "No brush or color set. Call brush.set('brushName', color) before drawing."
+  ],
+  "stage": "render",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 1,
+  "attempts": [
+    {
+      "code": "function setup() {\n  createCanvas(1000, 1400, WEBGL);\n  randomSeed(42);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n\n  // Flower and seed head\n  brush.fill(\"#ffd666\", 200);\n  brush.beginShape();\n  brush.vertex(-100, 50, 2);\n  brush.vertex(-100, 100, 2);\n  brush.vertex(-50, 150, 2);\n  brush.vertex(50, 150, 2);\n  brush.vertex(100, 100, 2);\n  brush.vertex(100, 50, 2);\n  brush.endShape();\n\n  // Fruit (bud)\n  brush.noMass();\n  brush.circle(0, 0, 20, 2);\n  brush.line(0, 0, 10, 5, 2);\n  brush.line(0, 0, -10, 5, 2);\n  brush.noWiggle();\n  brush.noField();\n  brush.fill(\"#996633\", 200);\n  brush.beginShape();\n  brush.vertex(20, 5);\n  brush.vertex(20, 10);\n  brush.vertex(-20, 10);\n  brush.vertex(-20, 5);\n  brush.endShape();\n\n  // Seed\n  brush.noMass();\n  brush.circle(0, 0, 5, 2);\n  brush.noWiggle();\n  brush.noField();\n  brush.fill(\"#885522\", 200);\n\n  // Foliage and stem\n  brush.fill(\"#805200\", 200);\n  brush.beginShape();\n  brush.vertex(-30, 0, 2);\n  brush.vertex(-30, 20, 2);\n  brush.vertex(-10, 40, 2);\n  brush.vertex(10, 40, 2);\n  brush.vertex(30, 20, 2);\n  brush.vertex(30, 0, 2);\n  brush.endShape();\n\n  brush.stroke(\"#805200\", 200);\n  brush.line(-40, 0, 140, 0, 2);\n  brush.line(-10, 40, 140, 40, 2);\n  brush.line(-40, 0, -10, 40, 2);\n}\n\nfunction draw() {\n  // Draw the specimen inside the frame\n  // You can add text, add some semi-transparent effects, etc.\n}",
+      "reason": "runtime: No brush or color set. Call brush.set('brushName', color) before drawing."
+    }
+  ],
+  "code": "function setup() {\n  createCanvas(1000, 1400, WEBGL);\n  randomSeed(42);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n\n  // Flower and seed head\n  brush.fill(\"#ffd666\", 200);\n  brush.beginShape();\n  brush.vertex(-100, 50, 2);\n  brush.vertex(-100, 100, 2);\n  brush.vertex(-50, 150, 2);\n  brush.vertex(50, 150, 2);\n  brush.vertex(100, 100, 2);\n  brush.vertex(100, 50, 2);\n  brush.endShape();\n\n  // Fruit (bud)\n  brush.noMass();\n  brush.circle(0, 0, 20, 2);\n  brush.line(0, 0, 10, 5, 2);\n  brush.line(0, 0, -10, 5, 2);\n  brush.noWiggle();\n  brush.noField();\n  brush.fill(\"#996633\", 200);\n  brush.beginShape();\n  brush.vertex(20, 5);\n  brush.vertex(20, 10);\n  brush.vertex(-20, 10);\n  brush.vertex(-20, 5);\n  brush.endShape();\n\n  // Seed\n  brush.noMass();\n  brush.circle(0, 0, 5, 2);\n  brush.noWiggle();\n  brush.noField();\n  brush.fill(\"#885522\", 200);\n\n  // Foliage and stem\n  brush.fill(\"#805200\", 200);\n  brush.beginShape();\n  brush.vertex(-30, 0, 2);\n  brush.vertex(-30, 20, 2);\n  brush.vertex(-10, 40, 2);\n  brush.vertex(10, 40, 2);\n  brush.vertex(30, 20, 2);\n  brush.vertex(30, 0, 2);\n  brush.endShape();\n\n  brush.stroke(\"#805200\", 200);\n  brush.line(-40, 0, 140, 0, 2);\n  brush.line(-10, 40, 140, 40, 2);\n  brush.line(-40, 0, -10, 40, 2);\n}\n\nfunction draw() {\n  brush.set(\"HB\", \"#ffd666\"); // Set brush and color before drawing\n  // Draw the specimen inside the frame\n  // You can add text, add some semi-transparent effects, etc.\n}"
+}

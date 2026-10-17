@@ -1,0 +1,17 @@
+{
+  "id": "cs-010",
+  "day": 36,
+  "location": "EXT. NIGHT GARDEN",
+  "light": "cool blue twilight",
+  "species": "Lupinus noctis",
+  "flower": "a tall conical spike of small deep-blue pea flowers",
+  "foliage": "star-shaped palmate leaves radiating from the stem",
+  "color": "indigo spike, blue-green foliage",
+  "archetype": "spike",
+  "palette": {
+    "foliage": "#5c7a72",
+    "petal": "#3f5a9c",
+    "accent": "#28386b",
+    "stem": "#6b7a5a"
+  }
+}

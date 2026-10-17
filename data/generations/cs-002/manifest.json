@@ -1,0 +1,55 @@
+{
+  "scene": {
+    "id": "cs-002",
+    "day": 7,
+    "location": "INT. BOATHOUSE — NORTH WINDOW",
+    "light": "cold, flat daylight",
+    "species": "Thalassa caerulea",
+    "flower": "a loose cluster of small dusty-blue bell flowers",
+    "foliage": "broad heart-shaped grey-green leaves on a thick pale stem",
+    "color": "dusty blue flowers, grey-green leaves, bone stem",
+    "archetype": "bells",
+    "palette": {
+      "foliage": "#7f8f77",
+      "petal": "#8fa8c4",
+      "accent": "#6d86a3",
+      "stem": "#9a9280"
+    }
+  },
+  "count": 3,
+  "baseSeed": 1000,
+  "model": null,
+  "created": "2026-10-17T15:40:00.463Z",
+  "takes": [
+    {
+      "i": 1,
+      "seed": 1001,
+      "ok": true,
+      "errors": [],
+      "stage": "rendered",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 0
+    },
+    {
+      "i": 2,
+      "seed": 1002,
+      "ok": true,
+      "errors": [],
+      "stage": "rendered",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 0
+    },
+    {
+      "i": 3,
+      "seed": 1003,
+      "ok": true,
+      "errors": [],
+      "stage": "rendered",
+      "doneReason": "stop",
+      "truncated": false,
+      "attemptCount": 0
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "i": 4,
+  "seed": 1004,
+  "ok": true,
+  "errors": [],
+  "stage": "rendered",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 0,
+  "attempts": [],
+  "code": "function form(x, w, k, mid, acc) {\n  if (k === \"sun\" || k === \"moon\" || k === \"fire\") {\n    brush.fill(acc, 210);\n    brush.circle(x + w / 2, -220, 86, 0.4);\n  } else if (k === \"stars\") {\n    brush.set(\"2H\", acc, 0.6);\n    for (let j = 0; j < 10; j++) brush.line(x + random(w), -400 + random(300), x + random(w), -400 + random(300));\n  } else if (k === \"hills\" || k === \"city\" || k === \"forest\") {\n    brush.fill(mid, 200);\n    brush.fillBleed(0.5, \"out\", 90);\n    brush.beginShape(0.5);\n    brush.vertex(x, 40, 1.0);\n    brush.vertex(x + w * 0.25, -120, 0.8);\n    brush.vertex(x + w * 0.5, 0, 1.0);\n    brush.vertex(x + w * 0.75, -160, 0.8);\n    brush.vertex(x + w, -30, 1.0);\n    brush.endShape(true);\n  } else if (k === \"rain\" || k === \"sea\" || k === \"fields\") {\n    brush.set(\"2H\", acc, 0.5);\n    for (let j = 0; j < 10; j++) brush.line(x, -360 + j * 60, x + w, -360 + j * 60);\n  } else if (k === \"window\") {\n    brush.fill(acc, 155);\n    brush.rect(x + w * 0.2, -260, w * 0.6, 300);\n  } else {\n    brush.set(\"2B\", acc, 0.6);\n    brush.line(x, 20, x + w, 20);\n  }\n}\n\nfunction setup() {\n  createCanvas(1440, 900, WEBGL);\n  randomSeed(45956);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n  const cols = 6, pw = 1440 / cols;\n  const base = [\"#2b3550\",\"#3f5a7a\",\"#5a4a78\",\"#a06a8a\",\"#3a3550\",\"#6a7a9a\"];\n  const mid = [\"#1f2838\",\"#2a3a4a\",\"#3a2a4a\",\"#6a3a5a\",\"#2a2440\",\"#4a5a6a\"];\n  const acc = [\"#e8c98f\",\"#f0a060\",\"#e07a9a\",\"#f0c8d0\",\"#e8d9b0\",\"#f0d9c0\"];\n  const kind = [\"horizon\",\"sun\",\"sea\",\"hills\",\"stars\",\"moon\"];\n  for (let i = 0; i < cols; i++) {\n    const x = -720 + i * pw + 8, w = pw - 16;\n    brush.fill(base[i], 225);\n    brush.fillBleed(0.4, \"out\", 0);\n    brush.rect(x, -440, w, 880);\n    form(x, w, kind[i], mid[i], acc[i]);\n  }\n}\n\nfunction draw() {}"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-008",
+  "day": 28,
+  "location": "EXT. OLD WALL",
+  "light": "warm side light",
+  "species": "Hedera parva",
+  "flower": "small greenish umbels among the leaves",
+  "foliage": "heart-shaped deep-green leaves on a trailing vine",
+  "color": "deep green leaves, muted green flowers",
+  "archetype": "vine",
+  "palette": {
+    "foliage": "#4f6b3f",
+    "petal": "#8fa06a",
+    "accent": "#2f4a28",
+    "stem": "#6b5a3e"
+  }
+}

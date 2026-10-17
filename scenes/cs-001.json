@@ -1,0 +1,17 @@
+{
+  "id": "cs-001",
+  "day": 3,
+  "location": "EXT. CONSERVATORY",
+  "light": "damp, low light",
+  "species": "Nerina pallida",
+  "flower": "a single five-petaled pale apricot bloom with a small dark center, two buds on side stems",
+  "foliage": "lance-shaped olive-green leaves alternating along a slender reddish stem",
+  "color": "soft apricot petals, olive foliage, rust stem",
+  "archetype": "singleBloom",
+  "palette": {
+    "foliage": "#8a9c5a",
+    "petal": "#eec48a",
+    "accent": "#8a5a2b",
+    "stem": "#6b5a3e"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "callsheet",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A herbarium of films that were never made. Models paint botanical specimens as p5.brush code, judged and selected into plates.",
+  "scripts": {
+    "render": "node render/render.mjs",
+    "paint": "node painter/generate.mjs",
+    "shoot": "node loop/shoot.mjs",
+    "judge": "node judge/judge.mjs",
+    "build": "node web/build.mjs",
+    "serve": "node web/server.mjs"
+  },
+  "dependencies": {
+    "p5": "2.3.4",
+    "p5.brush": "2.2.3",
+    "playwright": "1.64.1",
+    "pngjs": "^7.0.0"
+  }
+}

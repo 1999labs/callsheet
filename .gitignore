@@ -1,0 +1,12 @@
+node_modules/
+render/.tmp/
+web/site/
+.venv/
+training/adapters/
+training/adapters-scripts/
+training/fused/
+training/callsheet.gguf
+training/data/
+training/data-scripts/
+*.log
+.DS_Store

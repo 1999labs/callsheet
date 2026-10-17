@@ -1,0 +1,49 @@
+{
+  "kind": "colorscript",
+  "id": "sc-011",
+  "title": "Blue Hour",
+  "director": "S. Nakamura",
+  "year": 2000,
+  "genre": "romance",
+  "cols": 6,
+  "scenes": [
+    "first light",
+    "golden",
+    "seaside",
+    "courtyard",
+    "blue hour",
+    "night"
+  ],
+  "base": [
+    "#2b3550",
+    "#3f5a7a",
+    "#5a4a78",
+    "#a06a8a",
+    "#3a3550",
+    "#6a7a9a"
+  ],
+  "mid": [
+    "#1f2838",
+    "#2a3a4a",
+    "#3a2a4a",
+    "#6a3a5a",
+    "#2a2440",
+    "#4a5a6a"
+  ],
+  "acc": [
+    "#e8c98f",
+    "#f0a060",
+    "#e07a9a",
+    "#f0c8d0",
+    "#c8d0f0",
+    "#f0d9c0"
+  ],
+  "form": [
+    "horizon",
+    "sun",
+    "sea",
+    "hills",
+    "stars",
+    "moon"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "cs-005",
+  "day": 18,
+  "location": "INT. FERN HOUSE",
+  "light": "dappled green shade",
+  "species": "Filix longa",
+  "flower": "no flower; a coiled young frond at the crown",
+  "foliage": "long feathery fronds, many small pinnae",
+  "color": "deep and mid greens",
+  "archetype": "fern",
+  "palette": {
+    "foliage": "#5f7a44",
+    "petal": "#7f9a5c",
+    "accent": "#3f5a30",
+    "stem": "#6b7a4a"
+  }
+}

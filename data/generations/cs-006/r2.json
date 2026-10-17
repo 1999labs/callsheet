@@ -1,0 +1,14 @@
+{
+  "i": 2,
+  "seed": 1002,
+  "ok": false,
+  "errors": [
+    "CV is not defined"
+  ],
+  "stage": "render",
+  "doneReason": "stop",
+  "truncated": false,
+  "attemptCount": 0,
+  "attempts": [],
+  "code": "function leaf(bx, by, tx, ty, s, col, al) {\n  brush.fill(col, al);\n  brush.fillBleed(0.4, \"out\", -15);\n  brush.fillTexture(0.45, 0.35);\n  brush.beginShape(0.6);\n  brush.vertex(bx, by - s, 0.4);\n  brush.vertex(tx, ty, 1.0);\n  brush.vertex(bx, by + s, 0.4);\n  brush.endShape(true);\n}\n\nfunction setup() {\n  createCanvas(1000, 1400, WEBGL);\n  randomSeed(72903);\n  background(\"#f3ecdd\");\n  brush.scaleBrushes(4);\n  const fol = \"#7f8f77\", pet = \"#8fa8c4\", acc = \"#8fa8c4\", stm = \"#7a8a6a\";\n  const cv = \"#8fa8c4\", vt = \"#b17a5a\", th = \"#7a5a30\", a = \"#6a3010\";\n  brush.set(\"2B\", stm, 1.0);\n  brush.line(0, 650, 0, -520);\n  leaf(0, 540, -300, 480, 120, fol, 60);\n  leaf(0, 540, 310, 490, 120, fol, 60);\n  leaf(0, 620, -200, 650, 100, fol, 58);\n  leaf(0, 380, 260, 320, 110, fol, 62);\n  leaf(0, 300, -90, 240, 106, fol, 60);\n  leaf(0, 0, 120, -140, 120, fol, 60);\n  for (let i = 0; i < 7; i++) {\n    const x = (i % 2 ? 1 : -1) * 90;\n    brush.set(\"2H\", x, 0.6);\n    brush.line(0,CV, x, -CV);\n  }\n  brush.fillBleed(0.5, \"out\", 45);\n  brush.fillTexture(0.5, 0.5);\n  brush.fill(a, 74);\n  brush.circle(0, 0, 66, 0.5);\n}\n\nfunction draw() {}"
+}
