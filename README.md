@@ -132,9 +132,7 @@ endpoint; with neither set, the judge runs with no model at all.
    `irregular`. Show *example calls with numbers* instead.
 3. **The compile gate is the cheapest reward.** A parse check plus a render
    success/failure check filters most broken output for free.
-4. **Aesthetic reward is the hard part.** It has to be authored, not discovered - so
-   the judge anchors on a hand-rated reference pool and lets a human rating override
-   the score (`judge/README.md`).
+4. **Aesthetic reward is the hard part.** It has to be authored, not discovered, so the judge anchors on a hand-rated reference pool and lets a human rating override the score (`judge/README.md`).
 
 ## Known constraint: local inference on this machine
 
