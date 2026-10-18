@@ -10,19 +10,19 @@ behind it. This is a display of reinforcement learning on a creative task, where
 ## The loop
 
 ```
-scene brief ──▶ PAINTER (LLM writes p5.brush code)
-                     │
-                     ▼
-              SYNTAX GATE (balanced code?)
-                     │
-                     ▼
-              RENDER (headless browser → PNG)
-                     │
-                     ▼
-              JUDGE (vs. reference pool)  ──▶ keep winners / keep outtakes
-                     │
-                     ▼
-              LEARN (fine-tune on winners)  ──▶ better painter
+PAINTER (LLM writes p5.brush code)
+│
+▼
+SYNTAX GATE (balanced code?)
+│
+▼
+RENDER (headless browser → PNG)
+│
+▼
+JUDGE (vs. reference pool)  ──▶ keep winners / keep outtakes
+│
+▼
+LEARN (fine-tune on winners)  ──▶ better painter
 ```
 
 Every step is kept on disk, so a shoot is fully reproducible and every failure is
