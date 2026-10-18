@@ -19,10 +19,10 @@ SYNTAX GATE (balanced code?)
 RENDER (headless browser → PNG)
    │
    ▼
-JUDGE (vs. reference pool)  ──▶ keep winners / keep outtakes
+JUDGE (vs. reference pool) ──▶ keep winners / keep outtakes
    │
    ▼
-LEARN (fine-tune on winners)  ──▶ better painter
+LEARN (fine-tune on winners) ──▶ better painter
 ```
 
 Every step is kept on disk, so a shoot is fully reproducible and every failure is
