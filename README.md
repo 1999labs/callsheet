@@ -11,17 +11,17 @@ behind it. This is a display of reinforcement learning on a creative task, where
 
 ```
 PAINTER (LLM writes p5.brush code)
-│
-▼
+   │
+   ▼
 SYNTAX GATE (balanced code?)
-│
-▼
+   │
+   ▼
 RENDER (headless browser → PNG)
-│
-▼
+   │
+   ▼
 JUDGE (vs. reference pool)  ──▶ keep winners / keep outtakes
-│
-▼
+   │
+   ▼
 LEARN (fine-tune on winners)  ──▶ better painter
 ```
 
