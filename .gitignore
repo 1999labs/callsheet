@@ -11,3 +11,5 @@ training/data-scripts/
 *.log
 .DS_Store
 brief.md
+
+window/sheet.html
