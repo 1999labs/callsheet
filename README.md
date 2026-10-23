@@ -4,10 +4,9 @@ A model is shown one frame and one line of premise. It writes down what it think
 
 ## Claim
 
-'''A model asked to describe an image, and then to describe the next image from that description, does not drift randomly. It drifts toward what it already expects. That iterated self-description regularises toward the mode, not toward chaos. Specific details fall away first. Faces become silhouettes. Rooms become the idea of a room. After enough rounds the model is no longer remembering a film, it is drawing the most probable picture of the kind of film it was told to remember.
+A model asked to describe an image, and then to describe the next image from that description, does not drift randomly. It drifts toward what it already expects. That iterated self-description regularises toward the mode, not toward chaos. Specific details fall away first. Faces become silhouettes. Rooms become the idea of a room. After enough rounds the model is no longer remembering a film, it is drawing the most probable picture of the kind of film it was told to remember.
 
 The poster at the end is the clearest evidence. It is not a style applied as a finishing move. It is what the model produces when asked to summarise a film it only half remembers, and it is more generic than anything that came before it.
-'''
 
 ## Hypothesis
 
