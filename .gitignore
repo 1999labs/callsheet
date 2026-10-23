@@ -10,3 +10,4 @@ training/data/
 training/data-scripts/
 *.log
 .DS_Store
+brief.md
