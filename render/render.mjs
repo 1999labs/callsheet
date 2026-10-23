@@ -15,9 +15,10 @@ const DEFAULT = {
   settleMs: Number(process.env.CALLSHEET_SETTLE_MS || 400),
 };
 
-function buildHtml({ sketch, width, height, seed }) {
+function buildHtml({ sketch, width, height, seed, brush }) {
   const p5Path = resolve(ROOT, "node_modules/p5/lib/p5.min.js");
   const brushPath = resolve(ROOT, "node_modules/p5.brush/dist/p5.brush.js");
+  const brushTag = brush ? `<script src="file://${brushPath}"></script>` : "";
   return `<!doctype html>
 <html>
 <head>
@@ -36,7 +37,7 @@ function buildHtml({ sketch, width, height, seed }) {
   });
 </script>
 <script src="file://${p5Path}"></script>
-<script src="file://${brushPath}"></script>
+${brushTag}
 <script>
   (function () {
     if (typeof window.createCanvas !== "function") return;
@@ -58,7 +59,8 @@ export async function renderSketch(sketch, opts = {}) {
 
   await mkdir(join(__dirname, ".tmp"), { recursive: true });
   const tmpHtml = join(__dirname, ".tmp", `sketch-${randomUUID()}.html`);
-  await writeFile(tmpHtml, buildHtml({ sketch, width, height, seed }), "utf8");
+  const useBrush = /\bbrush\s*\./.test(sketch);
+  await writeFile(tmpHtml, buildHtml({ sketch, width, height, seed, brush: useBrush }), "utf8");
 
   const browser = await chromium.launch({
     args: [
@@ -124,13 +126,16 @@ export async function renderSketch(sketch, opts = {}) {
 
 if (import.meta.url === `file://${process.argv[1]}`) {
   const { readFile } = await import("node:fs/promises");
-  const [, , sketchPath, outPath] = process.argv;
+  const [, , sketchPath, outPath, wArg, hArg] = process.argv;
   if (!sketchPath || !outPath) {
-    console.error("usage: node render/render.mjs <sketch.js> <out.png>");
+    console.error("usage: node render/render.mjs <sketch.js> <out.png> [width] [height]");
     process.exit(1);
   }
   const sketch = await readFile(resolve(sketchPath), "utf8");
-  const result = await renderSketch(sketch);
+  const opts = {};
+  if (wArg) opts.width = parseInt(wArg, 10);
+  if (hArg) opts.height = parseInt(hArg, 10);
+  const result = await renderSketch(sketch, opts);
   const out = resolve(outPath);
   if (result.png) {
     await mkdir(dirname(out), { recursive: true });

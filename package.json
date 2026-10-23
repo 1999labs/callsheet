@@ -10,9 +10,11 @@
     "shoot": "node loop/shoot.mjs",
     "judge": "node judge/judge.mjs",
     "build": "node web/build.mjs",
+    "player": "node player/build.mjs",
     "serve": "node web/server.mjs"
   },
   "dependencies": {
+    "monaco-editor": "^0.52.2",
     "p5": "2.3.4",
     "p5.brush": "2.2.3",
     "playwright": "1.64.1",
