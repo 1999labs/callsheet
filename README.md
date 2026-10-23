@@ -1,4 +1,4 @@
-# Callsheet.art
+# Callsheet
 
 A model is shown one frame and one line of premise. It writes down what it thinks is happening, then what happens next. A renderer paints that next shot as code. The model never sees the previous frames, the script, or the transcript. Only the image in front of it. Then the loop repeats.
 
